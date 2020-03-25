@@ -32,7 +32,7 @@ print(f'B: {b}')
 
 #Copiando Listas
 a = [2,4,3,7]
-b = a[:]
+b = a[:] #É necessário indicar que você está copiando toda a lista
 b[2] = 0
 print(f'A: {a}')
 print(f'B: {b}')
