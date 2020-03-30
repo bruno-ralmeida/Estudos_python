@@ -1,9 +1,18 @@
+from random import randint
+
 def jogar():
     print("*********************************")
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    palavra_sec = 'batata'.upper()
+    arquivo = open('jogos/palavras.txt', 'r')
+    palavras = []
+    for linha in arquivo:
+        palavras.append(linha.strip())
+
+    palavra_sec = palavras[randint(0, len(palavras))].upper()
+    print(palavra_sec)
+    
     enforcou = acertou = False
     lst_acerto = ['_' for letra in palavra_sec] #List Comprehension
     qtd_chute = len(palavra_sec) + 2
