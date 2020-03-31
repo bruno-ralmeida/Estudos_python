@@ -116,7 +116,7 @@ def desenha_forca(erros):
 
     print(" |            ")
     print("_|___         ")
-    print()
+    print('')
 
 
 def sortear_palavra():
