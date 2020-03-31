@@ -141,10 +141,7 @@ def verifica_chute(palavra_sec, lst_acerto, erros):
     if chute not in palavra_sec:
         erros += 1
         desenha_forca(erros)
-
-
-
-
+        
     return erros
 
 
