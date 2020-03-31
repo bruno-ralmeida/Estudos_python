@@ -1,8 +1,6 @@
 Banana
 Melancia
-Abacaxi
-Maça
-Pera
+AbacaxI
 Kiwi
 Uva
 Morango
