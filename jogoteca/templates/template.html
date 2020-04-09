@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.css')}}">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jogoteca</title>
-</head>
-<body>
- <div class="container">
-      <div class="page-header">
-          <h1>{{ titulo }}</h1>
-      </div>
-     {% block conteudo %}{% endblock %} <!--Conteúdo-->
- </div>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+  </head>
+  <body>
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul id="messages" class="list-unstyled">
+                {% for message in messages %}
+                    <li class="alert alert-success">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
 
-</body>
+        <div class="page-header">
+            <h1>{{ titulo }}</h1>
+        </div>
+
+        {% block conteudo %}{% endblock %}
+    </div>
+  <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.4.1.slim.min.js') }}"></script>
+  <script type="text/javascript">
+
+      /*Sempre que ouver alterações de imagem*/
+      $('form input[type="file"]').change(event => {
+          /*Pegar o arquivo*/
+          let arquivos = event.target.files;
+          /*Verifica o tamanho*/
+          if (arquivos.length === 0) {
+            console.log('sem imagem pra mostrar')
+          } else {
+              /*Verifica o tipo do arquivo*/
+              if(arquivos[0].type == 'image/jpeg') {
+                  /*Remove o elemento img*/
+                $('img').remove();
+                /*Criando novo elemento de img com classe img-responsive*/
+                let imagem = $('<img class="img-responsive">');
+                /*Adicionando o atributo da url de acordo com o input*/
+                imagem.attr('src', window.URL.createObjectURL(arquivos[0]));
+                /*Inserindo o elemento no inicio*/
+                $('figure').prepend(imagem);
+              } else {
+                alert('Formato não suportado')
+              }
+          }
+        });
+  </script>
+  </body>
 </html>

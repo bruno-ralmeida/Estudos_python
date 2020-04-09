@@ -10,12 +10,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/templates/novo.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/jogoteca.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1a83lc12g96iGUS5eY5NZG6soo0" />
@@ -29,14 +32,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruno Rocha\PycharmProjects\jogoteca\uploads" />
+      <recent name="C:\Users\Bruno Rocha\PycharmProjects\jogoteca" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Bruno Rocha\PycharmProjects\jogoteca\static" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="jogoteca" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.jogoteca">
+    <configuration name="jogoteca" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="jogoteca" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -58,11 +67,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.jogoteca" />
-      </list>
-    </recent_temporary>
+    <configuration name="prepara_banco" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="jogoteca" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Bruno Rocha\PycharmProjects\jogoteca\prepara_banco.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -74,7 +100,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586103545388</updated>
-      <workItem from="1586103546888" duration="6419000" />
+      <workItem from="1586103546888" duration="8872000" />
+      <workItem from="1586172118990" duration="2076000" />
+      <workItem from="1586186076277" duration="2698000" />
+      <workItem from="1586207380692" duration="1370000" />
+      <workItem from="1586210366117" duration="1676000" />
+      <workItem from="1586218693227" duration="4438000" />
+      <workItem from="1586227388847" duration="1011000" />
+      <workItem from="1586228774695" duration="46000" />
+      <workItem from="1586228903797" duration="951000" />
+      <workItem from="1586257984414" duration="51000" />
+      <workItem from="1586258108140" duration="81000" />
+      <workItem from="1586258269977" duration="1865000" />
+      <workItem from="1586310401144" duration="998000" />
+      <workItem from="1586343907653" duration="2383000" />
+      <workItem from="1586346308614" duration="990000" />
+      <workItem from="1586396224651" duration="2376000" />
+      <workItem from="1586430870226" duration="3610000" />
+      <workItem from="1586435876180" duration="123000" />
+      <workItem from="1586449867998" duration="2294000" />
     </task>
     <servers />
   </component>
@@ -82,24 +126,45 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1586111281869">
+    <state x="462" y="123" key="FileChooserDialogImpl" timestamp="1586229628983">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="462" y="123" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1304.768@0.0.1366.738" timestamp="1586229628983" />
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom" timestamp="1586452795131">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1261" height="139" key="GridCell.Tab.0.bottom/0.0.1366.738/-1304.0.1304.768@-1304.0.1304.768" timestamp="1586189030464" />
+    <state width="1323" height="132" key="GridCell.Tab.0.bottom/0.0.1366.738/-1304.0.1304.768@0.0.1366.738" timestamp="1586121363114" />
     <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738/-1504.0.1504.768@0.0.1366.738" timestamp="1586111281869" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1586111281868">
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1304.768@0.0.1366.738" timestamp="1586452795131" />
+    <state width="1323" height="154" key="GridCell.Tab.0.center" timestamp="1586452795131">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state width="1261" height="139" key="GridCell.Tab.0.center/0.0.1366.738/-1304.0.1304.768@-1304.0.1304.768" timestamp="1586189030464" />
+    <state width="1323" height="132" key="GridCell.Tab.0.center/0.0.1366.738/-1304.0.1304.768@0.0.1366.738" timestamp="1586121363114" />
     <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738/-1504.0.1504.768@0.0.1366.738" timestamp="1586111281868" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1586111281868">
+    <state width="1323" height="154" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1304.768@0.0.1366.738" timestamp="1586452795131" />
+    <state width="1323" height="154" key="GridCell.Tab.0.left" timestamp="1586452795131">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state width="1261" height="139" key="GridCell.Tab.0.left/0.0.1366.738/-1304.0.1304.768@-1304.0.1304.768" timestamp="1586189030464" />
+    <state width="1323" height="132" key="GridCell.Tab.0.left/0.0.1366.738/-1304.0.1304.768@0.0.1366.738" timestamp="1586121363114" />
     <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738/-1504.0.1504.768@0.0.1366.738" timestamp="1586111281868" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1586111281869">
+    <state width="1323" height="154" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1304.768@0.0.1366.738" timestamp="1586452795131" />
+    <state width="1323" height="154" key="GridCell.Tab.0.right" timestamp="1586452795131">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state width="1261" height="139" key="GridCell.Tab.0.right/0.0.1366.738/-1304.0.1304.768@-1304.0.1304.768" timestamp="1586189030464" />
+    <state width="1323" height="132" key="GridCell.Tab.0.right/0.0.1366.738/-1304.0.1304.768@0.0.1366.738" timestamp="1586121363114" />
     <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738/-1504.0.1504.768@0.0.1366.738" timestamp="1586111281869" />
+    <state width="1323" height="154" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1304.768@0.0.1366.738" timestamp="1586452795131" />
+    <state x="184" y="11" key="SettingsEditor" timestamp="1586258389290">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="11" key="SettingsEditor/0.0.1366.738/1366.0.1304.768@0.0.1366.738" timestamp="1586258389290" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/jogoteca$jogoteca.coverage" NAME="jogoteca Coverage Results" MODIFIED="1586111281855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jogoteca$jogoteca.coverage" NAME="jogoteca Coverage Results" MODIFIED="1586452795109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jogoteca$prepare_banco.coverage" NAME="prepara_banco Coverage Results" MODIFIED="1586260014281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

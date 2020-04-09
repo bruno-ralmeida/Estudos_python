@@ -1,35 +1,17 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session, flash, url_for, send_from_directory
+from dao import JogoDao, UsuarioDao
+from flask_mysqldb import MySQL
+from models import Jogo, Usuario
+import time
+import os
 
 app = Flask(__name__)
+app.config.from_pyfile('config.py')
 
+db = MySQL(app)
 
-
-class Jogo:
-    def __init__(self, nome, categoria, console):
-        self.nome = nome
-        self.categoria = categoria
-        self.console = console
-
-jogo1 = Jogo('Super Mario', 'Ação', 'Nintendo')
-jogo2 = Jogo('Pokemon Gold', 'RPG', 'Gameboy')
-jogo3 = Jogo('Mortal Kombat', 'Luta', 'Nintendo')
-lista = [jogo1, jogo2, jogo3]
-
-@app.route('/')
-def index():
-    return render_template('lista.html', titulo='Jogos', jogos=lista)
-
-@app.route('/novo')
-def novo():
-    return  render_template('novo.html', titulo='Novo Jogo' )
-
-@app.route('/criar', methods=['POST',])
-def criar():
-    nome = request.form['nome']
-    categoria = request.form['categoria']
-    console = request.form['console']
-    novo_jogo = Jogo(nome, categoria, console)
-    lista.append(novo_jogo)
-    return redirect('/')
-
-app.run(debug=True)
+#Após configurar a aplicação é necessário importar as Viwes
+from views import *
+#O código só sera executado se o arquivo jogoteca for iniciado e não importado
+if __name__ == '__main__':
+    app.run(debug=True)
