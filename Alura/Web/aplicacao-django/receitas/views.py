@@ -3,7 +3,8 @@ from .models import Receita
 
 #Função render, devemos passar o request como parametro.
 def index(request):
-    receitas = Receita.objects.all()
+    #Ordenando a lista de receitas na oredem reversa do campo data
+    receitas = Receita.objects.order_by('-data_receita').filter(publicado=True) #Filtrando por campo
     dados = {
         'receitas': receitas
     }
@@ -16,3 +17,14 @@ def receita(request, receita_id):
         'receita': receita_exibir
     }
     return render(request, 'receita.html', receita)
+
+def buscar(request):
+    lista_receitas = Receita.objects.order_by('-data_receita').filter(publicado=True)
+    if 'buscar' in request.GET:
+        nome_busca = request.GET['buscar']
+        if buscar:
+         lista_receitas = lista_receitas.filter(nome_receita__icontains=nome_busca) #__icontains é como o operador like
+    dados = {
+        'receitas': lista_receitas
+    }
+    return render(request, 'buscar.html', dados)
