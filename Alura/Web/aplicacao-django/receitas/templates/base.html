@@ -23,13 +23,13 @@
 
 
 <body>
-    {% include 'partials/menu.html' %}
-    {% include 'partials/busca.html' %}
+    {% include 'partials/_menu.html' %}
+    {% include 'partials/_busca.html' %}
 
     {% block content %}
     {% endblock %}
  
-    {% include 'partials/footer.html'%}
+    {% include 'partials/_footer.html'%}
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="{% static 'js/jquery/jquery-2.2.4.min.js'%}"></script>
