@@ -6,6 +6,7 @@ from receitas.models import Receita
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 def cadastro(request):
+   
     if request.method == 'POST':
         nome = request.POST['nome']
         email = request.POST['email']
@@ -72,10 +73,13 @@ def dashboard(request):
 #  Utils
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 def senha_divergente(senha1, senha2):
+    """Realiza a compação de duas senhas informadas pelo usuário para verificar se as informações estão divergentes."""
     return senha1 != senha2
 
 def campo_vazio(campo):
+    """Verifica se os campos informados pelo usuário estão em branco."""
     return not campo.strip()
 
 def existe_cadastro(nome, email):
+    """Verifica se o cadastro do email ou username existe no sistema."""
     return (User.objects.filter(username=nome).exists() or User.objects.filter(email=email).exist()) 
