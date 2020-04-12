@@ -1,5 +1,5 @@
 
-import os
+import os, sys
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -15,7 +15,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'receitas',
-    'pessoas',
     'usuarios',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -114,3 +113,13 @@ STATICFILES_DIRS = [
 #MEDIA 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+#MESSAGES
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+    messages.SUCCESS: 'success',
+}
+#Definindo o diretório de apps do projeto
+PROJECT_ROOT = os.path.dirname(__file__)
+sys.path.insert(0, os.path.join(PROJECT_ROOT,'../apps'))

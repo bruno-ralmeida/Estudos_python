@@ -58,18 +58,26 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
+                                {% if user.is_authenticated %}
                                 <li><a href="{% url 'index'%}">Página Inicial</a></li>
+                                <li><a href="{% url 'dashboard'%}">Minhas receitas</a></li>
+                                <li><a href="{% url 'cad_receita'%}">Criar Receita</a></li>
+                                {% if user.is_superuser %}
+                                <li><a href="{% url 'admin:index' %}">Django Admin</a></li>
+                                {% endif %}
+                                <li><a href="{% url 'logout'%}">Sair</a></li>
+                                {% else %}
                                 <li><a href="{% url 'cadastro'%}">Cadastro</a></li>
-                                <li><a href="{% url 'login'%}">Login</a></li>
-                                
+                                <li><a href="{% url 'login'%}">Entrar</a></li>
+                                {% endif %}
                             </ul>
-
+                          
                             <!-- Formulario de busca -->
                             <div class="search-btn">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </div>
                             <!-- Formulario de busca -->
-
+                           
                         </div>
                         <!-- Nav End -->
                     </div>
