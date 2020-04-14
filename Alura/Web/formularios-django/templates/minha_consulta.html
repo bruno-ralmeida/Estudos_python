@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-<section class="col-8">
-    <h1>Passagem</h1>
+<section class="container col-8">
     <p>Sua origem é: {{ form.origem.value }}</p>
     <p>Seu destino é: {{ form.destino.value }}</p>
-    <p>Sua data de ida é: {{ form.ida.value }}</p>
-    <p>Sua data de volta é: {{ form.volta.value }}</p>
+    <p>Sua data de ida é: {{ form.data_ida.value }}</p>
+    <p>Sua hora de ida é: {{ form.hr_ida.value }}</p>
+    <p>Sua data de volta é: {{ form.data_volta.value }}</p>
+    <p>Sua hora de volta é: {{ form.hr_volta.value }}</p>
+    <p>Sua data de pesquisa é: {{ form.data_pesquisa.value }}</p>
+    <p>Sua classe é: {{ form.classe_viagem.value }}</p>
+    <p>Sua informação adicional é: {{ form.info.value }}</p>
+    <p>Seu e-mail é: {{ form.email.value }}</p>
 </section>
 {% endblock %}
